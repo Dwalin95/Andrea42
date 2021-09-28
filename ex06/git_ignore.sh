@@ -1,1 +1,1 @@
- find . -type f | git check-ignore --stdin
+git status --ignored -s | grep '!!'| cut -f 2 -d ' '
